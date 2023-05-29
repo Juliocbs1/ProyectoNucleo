@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styleEncriptador.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <title>Encriptador</title>
+    
+</head>
+<body>
+<main>
+    <img src="img/Logo_de_la_Universidad_El_Bosque.svg(1).png" class="imagen">
+
+    <p id="interrogacion">&excl;</p>
+    <p class="aviso">   Solo letras minúsculas y sin acentos</p>
+    
+
+    <input id="fileupload" type="file" name="fileupload" /> 
+    <textarea class="texto-ingresado" required placeholder="ingresa el texto aqui u archivo"></textarea>
+    <button class="botonencriptar" onclick="botonEncrip()">Encriptar</button>
+    <button class="botondesencriptar" onclick="botonDesencrip()">Desencriptar</button>
+
+</main>
+   
+<form  action="dato.php" method="post" >
+    <div class="rectangulo">
+        <input type="text" class="campoEmpresa" placeholder="Nombre" name="empresa">
+         <input type="text" class="campoDato" placeholder="ID Dato" name="id">
+        <textarea class="mensaje"></textarea>
+        <img src="img/Muñeco.png" class="imagenmuñeco">
+       
+        <p class="mensajeencriptador">Ningun mensaje fue encontrado</p>
+        <p class="mensajeencriptador2">Ingresa el texto que desees encriptar o desencriptar</p>
+        
+        <input class="botonEnviar" type="submit" value="ENVIAR"></input>
+    </div>
+
+</form>
+   
+
+
+
+    <script src="script/script.js"></script>
+    
+</body>
+</html>
